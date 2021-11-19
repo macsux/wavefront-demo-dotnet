@@ -1,0 +1,20 @@
+---
+Logging:
+  LogLevel:
+    Default: Information
+    Microsoft: Warning
+    Microsoft.Hosting.Lifetime: Information
+AllowedHosts: "*"
+
+Wavefront:
+  Client:
+    Server: https://longboard.wavefront.com/
+    Token: <WAVEFRONT_TOKEN>
+  Tags:
+    ApplicationName: MovieDemo
+    Cluster: us-west
+    Service: movies-api
+    Shard: primary
+    CustomTags:
+      Location: Palo-Alto
+      Env: production
